@@ -32,7 +32,7 @@ class _MyHomePageState extends State {
   @override
   Widget build(BuildContext context) {
     contentWidth  = MediaQuery.of( context ).size.width;
-    contentHeight = MediaQuery.of( context ).size.height - MediaQuery.of( context ).padding.top;
+    contentHeight = MediaQuery.of( context ).size.height - MediaQuery.of( context ).padding.top - MediaQuery.of( context ).padding.bottom;
 
     Widget body = Test1( contentWidth );
 //    Widget body = Test2( contentWidth );
